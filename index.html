@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TrustLink Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <h1>TrustLink – Business Trust Dashboard</h1>
+
+  <div class="card">
+    <h2>Business Name</h2>
+    <input type="text" id="businessName" placeholder="Enter business name">
+
+    <h3>Customer Rating (1–5)</h3>
+    <input type="number" id="rating" min="1" max="5">
+
+    <h3>Delivery Confirmed?</h3>
+    <select id="delivery">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <h3>Any Complaint?</h3>
+    <select id="complaint">
+      <option value="no">No</option>
+      <option value="yes">Yes</option>
+    </select>
+
+    <br><br>
+    <button onclick="calculateTrust()">Calculate Trust Score</button>
+  </div>
+
+  <div class="result">
+    <h2>Trust Score:</h2>
+    <p id="score">—</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
