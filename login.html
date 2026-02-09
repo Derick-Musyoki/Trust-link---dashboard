@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | TrustLink</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Login Your Business</h1>
+
+<form id="loginForm">
+    <input type="text" id="businessName" placeholder="Business Name" required />
+    <input type="password" id="pin" placeholder="Enter Password" required />
+    <button type="submit">Login</button>
+    </form>
+
+    <script src="auth.js"></script>
+
+     <span
+    id="togglePassword"
+    style="
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      user-select: none;
+    "
+  >
+  </span>
+</div>
+
+    
+    <a href="dashboard.html"></a></p>
+
+  <const loggedInUser = localStorage.getItem("loggedInUser");
+
+if (loggedInUser) {
+  window.location.href = "dashboard.html";
+}
+
+
+</body>
+</html>
+
