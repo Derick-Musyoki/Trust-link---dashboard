@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | TrustLink</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Register Your Business</h2>
+
+  <form id="registerForm">
+    <input type="text" id="businessName" placeholder="Business Name" required />
+    <input type="password" id="pin" placeholder="Create Password" required />
+    <button type="submit">Register</button>
+  </form>
+
+  <p>Already registered? <a href="login.html">Login</a></p>
+
+  <script src="auth.js"></script>
+
+<const loggedInUser = localStorage.getItem("loggedInUser");
+
+if (loggedInUser) {
+  window.location.href = "dashboard.html";
+}
+
+
+</body>
+</html>
