@@ -1,46 +1,29 @@
-# TrustLink – Business Trust Dashboard (Phase 1)
+# 🔗 TrustLink – Digital Business Trust Dashboard
 
-## Description
-TrustLink is a digital system designed to calculate and display a **Trust Score** for small businesses based on customer feedback, delivery confirmation, and complaints. This prototype allows businesses to see a measurable trust metric on a simple dashboard. 
+TrustLink is a simple web-based prototype designed to help informal and small businesses build digital trust through customer ratings, delivery confirmation, and complaint tracking.
 
-Phase 1 focuses on validating the core logic and providing a working **frontend dashboard** that can run on both desktop and mobile browsers.
-
----
-
-## Features (Phase 1)
-- Input fields for:
-  - Business Name
-  - Customer Rating (1–5)
-  - Delivery Confirmation (Yes/No)
-  - Complaint (Yes/No)
-- Automatic calculation of **Trust Score**
-- Dynamic display of Trust Score on the dashboard
-- Responsive layout for mobile and desktop browsers
+The project is built using HTML, CSS, and JavaScript, focusing on learning core web development concepts such as authentication, local storage, and basic business logic — without heavy frameworks or AI.
 
 ---
 
-## How it Works
-1. The user enters the **business name**, selects a **rating**, and chooses **delivery** and **complaint** status.
-2. Clicking the **Calculate Trust Score** button triggers a JavaScript function that:
-   - Starts the trust score at **50** (neutral)
-   - Adds **5 points per rating point**
-   - Adds **10 points if delivery is confirmed**
-   - Subtracts **10 points if there is a complaint**
-   - Limits the score between **0 and 100**
-3. The result is displayed instantly on the dashboard.
+## 🚀 Features
 
----
+- 🔐 User Registration & Login  
+  - Businesses register using a unique business name and PIN  
+  - Login system implemented using browser localStorage  
 
-## Technology Stack (Phase 1)
-- **Frontend:** HTML, CSS, JavaScript
-- **Storage:** Browser memory (LocalStorage can be added later)
-- **Compatibility:** Desktop and mobile browsers
-- **Future backend:** Solidity smart contracts (Phase 2+)
+- 📊 Trust Score Calculation  
+  - Starts from a base trust score  
+  - Adjusted using:
+    - Customer rating (1–5)
+    - Delivery confirmation
+    - Complaint status  
+  - Final score is capped between 0 and 100  
 
----
-
-## Phase 1 Screenshots
-*(Add screenshots here once you test on browser / phone)*
+- 🚪 Session Management  
+  - Tracks logged-in users  
+  - Logout clears active session  
+  - Dashboard page is protected from unauthorized access  
 
 ---
 
@@ -56,15 +39,7 @@ Phase 1 focuses on validating the core logic and providing a working **frontend 
 - API integration for third-party platforms
 - Smart contract automation for payments
 
----
-
-## How to Run (Phase 1)
-1. Clone or download the repository.
-2. Open `index.html` in a browser (desktop or mobile).
-3. Enter a business name, customer rating, delivery status, and complaint status.
-4. Click **Calculate Trust Score** to see the result.
-
-> **Note:** Currently Phase 1 runs locally. Hosting online (GitHub Pages, Netlify, or Vercel) is required for public mobile access.
+> **Note:** Current Phase runs locally. Hosting online (GitHub Pages, Netlify, or Vercel) is required for public mobile access.
 
 ---
 
