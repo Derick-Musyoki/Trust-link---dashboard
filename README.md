@@ -45,5 +45,4 @@ The project is built using HTML, CSS, and JavaScript, focusing on learning core 
 
 ## Author
 - Derick Spoiler and NEXUS COLLECTIVE team
-- Phase 1 implementation: frontend dashboard and trust calculation logic
 
